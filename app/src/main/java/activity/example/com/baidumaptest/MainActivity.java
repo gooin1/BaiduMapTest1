@@ -53,10 +53,10 @@ public class MainActivity extends AppCompatActivity {
         } else if (providerList.contains(LocationManager.NETWORK_PROVIDER)) {
             //如果没有gps，就调用网络位置
             provider = LocationManager.NETWORK_PROVIDER;
-            Toast.makeText(MainActivity.this, "尝试使用网络定位中...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "尝试使用网络定位中....", Toast.LENGTH_SHORT).show();
         } else {
             //没有位置服务时，toast提示
-            Toast.makeText(MainActivity.this, "智障快去开GPS位置服务或检查权限是否禁止", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "智障快去开GPS位置服务或检查权限是否禁止.", Toast.LENGTH_SHORT).show();
             return;
         }
         //获取位置
